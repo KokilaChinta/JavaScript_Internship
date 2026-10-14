@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bill and Tip Calculator</title>
+</head>
+<body>
+    <h2>Bill and Tip Calculator</h2>
+    <script>
+        let subtotal = Number(prompt("Enter the bill amount:"));
+        let tipPercentage = Number(prompt("Enter the tip percentage:"));
+        let tip = subtotal * tipPercentage / 100;
+        let total = subtotal;
+        total += tip;
+        console.log("Subtotal: $" + subtotal);
+        console.log("Tip Percentage: " + tipPercentage + "%");
+        console.log("Calculated Tip: $" + tip);
+        console.log("Total Amount to Pay: $" + total);
+    </script>
+</body>
+</html>
